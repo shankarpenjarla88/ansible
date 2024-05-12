@@ -1,0 +1,7 @@
+- name: variables declaring in command-line
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: printing name of persons
+    ansible.builtin.debug:
+      msg: "The {{p1}} went to meet {{p2}} at college" 
