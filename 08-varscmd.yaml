@@ -4,4 +4,4 @@
   tasks:
   - name: printing name of persons
     ansible.builtin.debug:
-      msg: "The {{p1}} went to meet {{p2}} at college" 
+      msg: "The {{men}} went to meet {{girl}} at college" 
