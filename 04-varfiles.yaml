@@ -1,5 +1,6 @@
 - name: Variables from files this is another type of variables
   hosts: localhost
+  become: yes
   vars_files:
   - variables.yaml
   tasks:
