@@ -1,0 +1,11 @@
+- name: Installing multiple packages using loops
+  hosts: localhost
+  tasks:
+  - name: Installing git and postfix
+    ansible.builtin.yum:
+      msg: "Now Installing is ready"
+      name: "{{item}}"
+      state: installed
+    loop:
+    - git
+    - postfix
