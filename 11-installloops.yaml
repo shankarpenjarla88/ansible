@@ -1,5 +1,6 @@
 - name: Installing multiple packages using loops
   hosts: localhost
+  become: yes
   tasks:
   - name: Installing git and postfix
     ansible.builtin.yum:
