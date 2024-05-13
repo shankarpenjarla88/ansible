@@ -4,9 +4,12 @@
   tasks:
   - name: Installing git and postfix
     ansible.builtin.yum:
-      msg: "Now Installing is ready"
       name: "{{item}}"
       state: installed
     loop:
     - git
     - postfix
+    - cyrus-sasl-plain
+    - mailx
+
+    
